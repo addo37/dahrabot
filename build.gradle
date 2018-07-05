@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+    id 'idea'
+}
+
+group 'dahrabot'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile     'com.google.guava:guava:21.0'
+    compile     'org.apache.commons:commons-lang3:3.5'
+    compile     'org.telegram:telegrambots-abilities:3.5'
+    compile     'org.apache.commons:commons-collections4:4.1'
+
+    testCompile 'org.mockito:mockito-all:2.0.2-beta'
+    testCompile 'junit:junit:4.11'
+}
